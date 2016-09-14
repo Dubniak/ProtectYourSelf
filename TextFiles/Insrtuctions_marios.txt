@@ -1,0 +1,5 @@
+Feature extraction server is using Flask, a microframework for Python based on Werkzeug and Jinja2 which comes under BSD license. more info http://flask.pocoo.org/
+For activation,
+		 ~/$ . venv/bin/activate 
+To exit framework
+		 ~/$ deactivate 

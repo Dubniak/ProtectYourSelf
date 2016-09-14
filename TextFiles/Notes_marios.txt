@@ -1,0 +1,33 @@
+Key aspects of the app :
+	User friendly
+	Lightweight
+	Easily Updated
+	Effective	
+	High Speed
+	Optimal detection rates
+	Simple dimensional feature vector - no over fitting
+
+Architecture
+	*Android App*	<-->	*Classification & Reporting Server*	<-->	*Feature Extraction server*
+
+Android App : extract DEX, interact with user, send data to CRS 
+CRS: analysis and classification, interact with Android app, communicate with FES, evaluate binary feature vector, machine learning
+	classifier based on Random Forest algorithm, output malicious labels , JAVA build
+FES: statical analysis of DEX using Androwarn, produce binary feature vector, PYTHON build
+
+Machine learning : collect malware from websites and bening apps from Google Play Strore (25,000 samples - 18% malware)
+
+Feature vector : represent structure format of data, provide correct labels based on API calls, request permissions, hardware components
+
+Feature Set Refinement : reduce redundancy of model , reduce over-fitting, reduce complexity, less accurate, redused evaluation time, 
+	false positive rates?  Correlation Attribute Evcaluation 
+
+
+Theory on machine learning and rate formulation :
+	On a sample of 100 , where 60 are malicious and 40 are genuine, we distinguish 
+	 Sample=  Mal. ** Gen.
+	***********************		From the total number of 100, there were 89 correct answers and 11 missed (9 gen and 2 malicious)
+ 	 |  Mal	*  TP  **  FP *		We define 
+   Answer|-----****************				Accuracy :  (TP + TN) / (TP + FP + FN + TN) = 89/100
+	 |  Gen	*  FN  **  TN *				Precision:   TP / (TP + FP)		    = 58 / (58+9)
+		***************				Recall   :   TP / (TP + FN)	            = 58 / 60
