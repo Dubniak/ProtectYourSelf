@@ -1,0 +1,37 @@
+Reviewer 1 : evaluation -1, confiedence 4
+1. No novelty in the classification method using state of the art features (API calls).
+2. Long and unorginized related work section. Individual work is not directly compared with ours.
+3. Are the highlited limitation, limitations indeed ? For overfitting problem , there is no proof
+4. Use of 2 servers is redudant.
+5. Centralized architecture could revial users' personal info to a third party. 
+	Open-source app, so everybody could check
+6. Why should it be lightweight and fast ? 
+7. Performance over accuracy for the reduction of the feature set. Is it worth it ? 
+8. FP Rate , the one that will prevent users from ucing a legitimate app, is missing.
+
+Reviewer 2: evaluation 1, confidence 4
+1. Fix language, overflowing lines, subsection headings, typos.
+2. He liked the covered literature but a more precise comparison to the proposed approach should be done.
+
+Reviewer 3: evaluation -1, confidence 4
+1. The paper doesn't cite enough related work , which is more complex than the presented one.
+2. The reviewr doesn't accept the provided numbers without knowing the analyzed malware/genuine families behavior
+3. Why to describe the on-device implementation? Why to install the app on the Android? 
+	It works like an antivirus application on PC. It could be present to alert on real time the user for new apps.
+
+Reviewer 4: evaluation -2 , confidence 4 
+1. Weakly explanation of data mining and feature set classification. Methodology doesn't follow normal scientific procedure. 
+2. Over-fitting problem is not discused enough and is not understood. 
+
+Ranking of issues based on reviewers' opinions : 
+1. Explain where the over-fitting limitation derives from. Maybe it is acceptable to have some noise after all. Or, present explicity the reason why it's unacceptable to have.
+In all cases, testing sessions needs to be initiated and numeric results should be obtained to formalize the hypothesis. 
+ 
+2. Re run the tests and provide thorough documentation of the analyzed app data. (3.2) (1.7) (1.8) (4.1)
+
+3. Work on the related section. Minimize the extend of each one while the connection among them should be presented better(+ add more relevant citations).
+
+4. Answer questions (1.5)(1.6)
+
+5. Work on the language on the layout . 
+
